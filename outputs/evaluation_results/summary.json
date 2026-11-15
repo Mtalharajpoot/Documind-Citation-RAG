@@ -1,0 +1,22 @@
+{
+  "exp1": {
+    "config": "config1",
+    "top_k": 3,
+    "answerable_correct": "10/15",
+    "correct_refusals": "5/5",
+    "answer_correctness_rate": 0.75,
+    "citation_correctness_rate": 1.0,
+    "unanswerable_handling_rate": 1.0,
+    "retrieval_doc_hit_rate": 1.0
+  },
+  "exp2": {
+    "config": "config2",
+    "top_k": 5,
+    "answerable_correct": "11/15",
+    "correct_refusals": "5/5",
+    "answer_correctness_rate": 0.8,
+    "citation_correctness_rate": 1.0,
+    "unanswerable_handling_rate": 1.0,
+    "retrieval_doc_hit_rate": 0.933
+  }
+}

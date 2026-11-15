@@ -1,0 +1,54 @@
+exp1 4 | direct | Q: Which two corpora were used to pre-train BERT?
+EXPECTED: BooksCorpus and English Wikipedia
+GOT: Not found in the provided documents.
+SOURCES: 
+retrieval_doc_ok=True
+
+exp1 5 | direct | Q: Which retriever and which generator does RAG use?
+EXPECTED: DPR as retriever and BART as generator
+GOT: Not found in the provided documents.
+SOURCES: 
+retrieval_doc_ok=True
+
+exp1 7 | explanation | Q: Why does the Transformer need positional encodings?
+EXPECTED: It has no recurrence or convolution, so positional information about token order must be injected
+GOT: Not found in the provided documents.
+SOURCES: 
+retrieval_doc_ok=True
+
+exp1 11 | long_section | Q: Describe the three different ways multi-head attention is used in the Transformer.
+EXPECTED: Encoder-decoder attention, encoder self-attention, and masked decoder self-attention
+GOT: Not found in the provided documents.
+SOURCES: 
+retrieval_doc_ok=True
+
+exp1 13 | long_section | Q: Explain how RAG combines parametric and non-parametric memory.
+EXPECTED: A pre-trained seq2seq generator is the parametric memory and a dense vector index of Wikipedia accessed by a retriever is the non-parametric memory
+GOT: RAG combines parametric and non-parametric memory by using the non-parametric component to help guide generation, which draws out specific knowledge stored within the parametric memory (RAG_Paper.pdf, Page 6). Combining these memories with generation is particularly beneficial for knowledge-intensiv
+SOURCES: RAG_Paper.pdf p6; RAG_Paper.pdf p9; RAG_Paper.pdf p2
+retrieval_doc_ok=True
+
+exp2 4 | direct | Q: Which two corpora were used to pre-train BERT?
+EXPECTED: BooksCorpus and English Wikipedia
+GOT: Not found in the provided documents.
+SOURCES: 
+retrieval_doc_ok=True
+
+exp2 7 | explanation | Q: Why does the Transformer need positional encodings?
+EXPECTED: It has no recurrence or convolution, so positional information about token order must be injected
+GOT: Not found in the provided documents.
+SOURCES: 
+retrieval_doc_ok=True
+
+exp2 10 | explanation | Q: Why does the Transformer scale the dot products by the square root of dk?
+EXPECTED: For large dk the dot products grow large and push softmax into regions with very small gradients
+GOT: Not found in the provided documents.
+SOURCES: 
+retrieval_doc_ok=False
+
+exp2 13 | long_section | Q: Explain how RAG combines parametric and non-parametric memory.
+EXPECTED: A pre-trained seq2seq generator is the parametric memory and a dense vector index of Wikipedia accessed by a retriever is the non-parametric memory
+GOT: RAG combines parametric and non-parametric memories by using the non-parametric component (retrieval-based memory) to guide generation, which draws out specific knowledge stored in the model's parametric memory (such as BART's parameters) (RAG_Paper.pdf, page 6). This hybrid approach allows knowledg
+SOURCES: RAG_Paper.pdf p6; RAG_Paper.pdf p9; RAG_Paper.pdf p19; RAG_Paper.pdf p1; RAG_Paper.pdf p8
+retrieval_doc_ok=True
+

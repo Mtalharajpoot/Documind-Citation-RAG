@@ -1,0 +1,54 @@
+
+== config1 3
+Q4 Which two corpora were used to pre-train BERT?
+   0.640 | BERT.pdf p13 | CLS] the man went to [MASK] store [SEP] likelihood. he bought a gallon [MASK] mi
+   0.635 | BERT.pdf p16 | s of absolute accuracy the MLM the [MASK] symbol for MLM; SAME means that model 
+   0.634 | BERT.pdf p4 | BERT. rectly captured by language modeling. In orderInstead, we pre-train BERT u
+Q5 Which retriever and which generator does RAG use?
+   0.586 | RAG_Paper.pdf p19 | ks such as story generation [11], the retrieval component would “collapse” and l
+   0.570 | RAG_Paper.pdf p5 | arable split for TQA). RAG combines the generation ﬂexibility of the “closed-boo
+   0.536 | RAG_Paper.pdf p2 | ansformers Library [66] and can be found at https://github.com/huggingface/trans
+Q7 Why does the Transformer need positional encodings?
+   0.544 | Attention_Is_All_You_Need.pdf p3 | Figure 1: The Transformer - model architecture. The Transformer follows this ove
+   0.540 | Attention_Is_All_You_Need.pdf p5 | Applications of Attention in our Model The Transformer uses multi-head attention
+   0.499 | Attention_Is_All_You_Need.pdf p6 | "positional encodings" to the input embeddings at the bottoms of the encoder and
+Q10 Why does the Transformer scale the dot products by the square root of dk?
+   0.391 | Attention_Is_All_You_Need.pdf p4 | on using a feed-forward network with a single hidden layer. While the two are si
+   0.390 | Attention_Is_All_You_Need.pdf p4 | ing for larger values of dk [3]. We suspect that for large values of dk, the dot
+   0.358 | Attention_Is_All_You_Need.pdf p8 | plying the training time, the number of GPUs used, and an estimate of the sustai
+Q11 Describe the three different ways multi-head attention is used in the Transformer.
+   0.685 | Attention_Is_All_You_Need.pdf p5 | iK , V W iV ) Where the projections are parameter matrices W iQ ∈Rdmodel×dk, W i
+   0.668 | Attention_Is_All_You_Need.pdf p5 | Applications of Attention in our Model The Transformer uses multi-head attention
+   0.653 | Attention_Is_All_You_Need.pdf p3 | Figure 1: The Transformer - model architecture. The Transformer follows this ove
+
+== config2 5
+Q4 Which two corpora were used to pre-train BERT?
+   0.597 | BERT.pdf p13 | was performed on 4 Label = IsNext Cloud TPUs in Pod conﬁguration (16 TPU chips t
+   0.585 | BERT.pdf p7 | n In this section, we perform ablation experiments 12The TriviaQA data we used c
+   0.561 | BERT.pdf p14 | comparable existing pre-training method to BERT is OpenAI GPT, which trains a B.
+   0.556 | BERT.pdf p3 | arch has also demon- we will omit an exhaustive background descrip-strated the i
+   0.550 | BERT.pdf p5 | y encode text pairs be- To ﬁne-tune on GLUE, we represent the input fore applyin
+Q5 Which retriever and which generator does RAG use?
+   0.550 | RAG_Paper.pdf p2 | y1:i−1) parametrized 1Code to run experiments with RAG has been open-sourced as 
+   0.501 | RAG_Paper.pdf p3 | ss with the following output token, Formally, we deﬁne: N pRAG-Token(y|x) ≈ Y X 
+   0.483 | RAG_Paper.pdf p8 | ormance and runtime. Figure 3 (left) shows that retrieving more documents at tes
+   0.477 | RAG_Paper.pdf p5 | ering Table 1 shows results for RAG along with state-of-the-art models. On all f
+   0.470 | RAG_Paper.pdf p7 | 4.5 Additional Results Generation Diversity Section 4.3 shows that RAG models ar
+Q7 Why does the Transformer need positional encodings?
+   0.534 | Attention_Is_All_You_Need.pdf p2 | our knowledge, however, the Transformer is the first transduction model relying 
+   0.479 | Attention_Is_All_You_Need.pdf p3 | Figure 1: The Transformer - model architecture. The Transformer follows this ove
+   0.447 | Attention_Is_All_You_Need.pdf p2 | pendencies between input and output. The Transformer allows for significantly mo
+   0.441 | Attention_Is_All_You_Need.pdf p6 | e bottoms of the encoder and decoder stacks. The positional encodings have the s
+   0.411 | Attention_Is_All_You_Need.pdf p9 | Table 3: Variations on the Transformer architecture. Unlisted values are identic
+Q10 Why does the Transformer scale the dot products by the square root of dk?
+   0.342 | Attention_Is_All_You_Need.pdf p4 | tude, pushing the softmax function into regions where it has extremely small gra
+   0.340 | Attention_Is_All_You_Need.pdf p4 | pute the matrix of outputs as: Attention(Q, K, V ) = softmax(QKT )V (1) √dk The 
+   0.300 | Attention_Is_All_You_Need.pdf p9 | Table 3: Variations on the Transformer architecture. Unlisted values are identic
+   0.261 | Attention_Is_All_You_Need.pdf p2 | pendencies between input and output. The Transformer allows for significantly mo
+   0.260 | Attention_Is_All_You_Need.pdf p8 | Table 2: The Transformer achieves better BLEU scores than previous state-of-the-
+Q11 Describe the three different ways multi-head attention is used in the Transformer.
+   0.647 | Attention_Is_All_You_Need.pdf p5 | output values. These are concatenated and once again projected, resulting in the
+   0.524 | Attention_Is_All_You_Need.pdf p3 | Figure 1: The Transformer - model architecture. The Transformer follows this ove
+   0.480 | Attention_Is_All_You_Need.pdf p5 | uses multi-head attention in three different ways: • In "encoder-decoder attenti
+   0.414 | Attention_Is_All_You_Need.pdf p2 | our knowledge, however, the Transformer is the first transduction model relying 
+   0.408 | Attention_Is_All_You_Need.pdf p13 | Attention Visualizations It is in this spirit that a majority of American govern
